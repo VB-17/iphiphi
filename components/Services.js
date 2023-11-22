@@ -50,7 +50,7 @@ function ListItem({ content }) {
 
 function Services() {
   return (
-    <div className="bg-blue-50">
+    <div className="bg-blue-50" id="future">
       <div className="mx-auto max-w-screen-lx py-20 pb-48">
         <div className="p-6">
           <h2 className="text-2xl font-semibold pb-10">Our Future Potential</h2>

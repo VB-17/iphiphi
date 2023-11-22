@@ -56,7 +56,7 @@ function CheckList({ content }) {
 
 function Products() {
   return (
-    <div className="bg-blue-50">
+    <div id="products" className="bg-blue-50">
       <div className="mx-auto py-20 max-w-screen-lx">
         <div className="p-6">
           <h1 className="text-2xl font-medium pb-8">Our Products</h1>

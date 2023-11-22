@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   const [open, setIsOpen] = useState(false);
@@ -18,22 +19,16 @@ function Footer() {
           />
         </div>
         <div
-          className={`nav-links duration-200 md:static absolute bg-white md:min-h-fit min-h-[50vh] left-0 ${open ? 'top-0 translate-y-16' : 'top-[-100%]'} md:w-auto  w-full flex items-center px-5`}>
+          className={`nav-links duration-200 md:static absolute bg-white md:min-h-fit min-h-[28vh] left-0 ${open ? 'top-0 translate-y-16' : 'top-[-100%]'} md:w-auto  w-full flex items-center px-5`}>
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             <li>
-              <a className="hover:text-gray-500" href="#">Products</a>
+              <Link className="hover:text-gray-500" href="#products">Products</Link>
             </li>
             <li>
-              <a className="hover:text-gray-500" href="#">Solution</a>
+              <Link className="hover:text-gray-500" href="#about">About</Link>
             </li>
             <li>
-              <a className="hover:text-gray-500" href="#">Resource</a>
-            </li>
-            <li>
-              <a className="hover:text-gray-500" href="#">Developers</a>
-            </li>
-            <li>
-              <a className="hover:text-gray-500" href="#">Pricing</a>
+              <Link className="hover:text-gray-500" href="#future">Future Services</Link>
             </li>
           </ul>
         </div>

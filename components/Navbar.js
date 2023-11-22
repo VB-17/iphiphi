@@ -7,7 +7,7 @@ function Footer() {
   const [open, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white px-4">
+    <header className="bg-white px-4 sticky top-0 z-10">
       <nav className="flex justify-between items-center max-w-screen-lx mx-auto">
         <div>
           <Image
@@ -25,17 +25,17 @@ function Footer() {
         >
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             <li>
-              <Link className="hover:text-gray-500" href="#products">
+              <Link className="hover:text-blue-500 text-[15px] " href="#products">
                 Products
               </Link>
             </li>
             <li>
-              <Link className="hover:text-gray-500" href="#about">
+              <Link className="hover:text-blue-500 text-[15px] " href="#about">
                 About
               </Link>
             </li>
             <li>
-              <Link className="hover:text-gray-500" href="#future">
+              <Link className="hover:text-blue-500 text-[15px] " href="#future">
                 Future Services
               </Link>
             </li>

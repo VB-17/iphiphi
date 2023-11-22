@@ -68,7 +68,7 @@ function Products() {
                 }`}
                 key={item.subTitle}
               >
-                <div className="relative w-full bg-gray-800 rounded-md">
+                <div className="relative w-full h-80 md:h-auto mb-8 md:mb-0 bg-gray-800 rounded-md">
                   <Image
                     src={item.img}
                     fill
@@ -78,7 +78,7 @@ function Products() {
                 </div>
                 <div className="space-y-6 w-full">
                   <h1 className="font-semibold text-2xl">{item.title}</h1>
-                  <h3 className="text-blue-600 text-base tracking-wide font-medium mb-4">
+                  <h3 className="text-blue-600 text-base tracking-wide font-medium ">
                     {item.subTitle}
                   </h3>
                   <p className="text-gray-700">{item.description}</p>

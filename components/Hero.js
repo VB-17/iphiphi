@@ -15,7 +15,7 @@ function Hero() {
             experiences.
           </p>
 
-          <Link href="#future">
+          <Link href="#about">
             <button
               type="button"
               className="font-medium text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-600 rounded-lg text-sm px-7 py-4 mt-6 mb-2 "

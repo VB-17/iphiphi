@@ -59,15 +59,21 @@ function Products() {
     <div id="products" className="bg-blue-50">
       <div className="mx-auto py-20 max-w-screen-lx">
         <div className="p-6">
-          <h1 className="text-2xl font-medium pb-8">Our Products</h1>
+          <h1 className="text-3xl font-medium pb-12">Our Products</h1>
           <div className="space-y-32">
             {myProducts.map((item, index) => (
-              <div className={`md:flex md:gap-x-16 ${index % 2 ? 'md:flex-row-reverse' : ''}`} key={item.subTitle}>
-                <div className="relative md:w-[50%] h-80 bg-gray-800 mb-6">
+              <div
+                className={`md:flex md:gap-x-16 ${
+                  index % 2 ? "md:flex-row-reverse" : ""
+                }`}
+                key={item.subTitle}
+              >
+                <div className="relative w-full bg-gray-800 rounded-md">
                   <Image
                     src={item.img}
                     fill
-                    alt={item.subTitle} 
+                    className="object-cover"
+                    alt={item.subTitle}
                   />
                 </div>
                 <div className="space-y-6 w-full">

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -14,12 +15,14 @@ function Hero() {
             experiences.
           </p>
 
-          <button
-            type="button"
-            className="font-medium text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-600 rounded-lg text-sm px-7 py-4 me-2 mb-2 "
-          >
-            Know More
-          </button>
+          <Link href="#future">
+            <button
+              type="button"
+              className="font-medium text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-600 rounded-lg text-sm px-7 py-4 mt-6 mb-2 "
+            >
+              Know More
+            </button>
+          </Link>
         </div>
 
         <div className="relative h-96 w-11/12 mx-auto mt-16 p-4 md:mt-0 md:max-w-md">

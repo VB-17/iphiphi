@@ -7,16 +7,16 @@ function Footer() {
       <footer
         class="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
         
-        <div class="mx-6 py-10 text-center md:text-left">
+        <div class="max-w-screen-lx md:mx-auto mx-6 py-10 text-center md:text-left">
           {/* <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4 justify-between align-center"> */}
           <div class="flex px-10 flex-col space-y-16 md:flex-row md:space-y-0 justify-between">
-            <div class="max-w-sm flex items-center">
+            <div class="max-w-sm ">
               <div>
                 <Image
                   src="/logo-light.png"
                   className="self-center md:-translate-x-4"
                   alt="IPHIPI Logo"
-                  width="300"
+                  width="200"
                   height="100"
                 />
               </div>

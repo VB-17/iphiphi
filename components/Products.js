@@ -1,12 +1,13 @@
 import React from "react";
+import Image from "next/image";
 
 const myProducts = [
   {
-    img: "",
+    img: "/chip.png",
     subTitle: "Intelligent TWS",
     title: "Experience Next-Level Audio with Intelligent TWS",
     description:
-      "Our intelligent TWS (True Wireless Sterio) earbuds are equipped with advanced smart chips that enhance your audio experience. With features like active noise cancellation based on your environment, conversation awarness by smart chips, and auto-noise cancellation during calls, you can immerse yourself in high-quality sound without only distractions",
+      "Our intelligent TWS (True Wireless Stereo) earbuds are equipped with advanced smart chips that enhance your audio experience. With features like active noise cancellation based on your environment, conversation awarness by smart chips, and auto-noise cancellation during calls, you can immerse yourself in high-quality sound without only distractions",
     features: [
       "Active Noise Cancellation",
       "Auto Noise Cancellation",
@@ -15,7 +16,7 @@ const myProducts = [
   },
 
   {
-    img: "",
+    img: "/pr1.webp",
     subTitle: "Intelligent Mics for Call Centers",
     title: "Boost Productivity and Clarity with Intelligent Call Center Mics",
     description:
@@ -30,7 +31,7 @@ function CheckList({ content }) {
     <li className="flex items-center">
       <span className="flex items-center justify-between bg-green-500 p-1 rounded-full">
         <svg
-          class="flex-shrink-0  w-2 h-2 text-white "
+          className="flex-shrink-0  w-2 h-2 text-white "
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -55,26 +56,36 @@ function CheckList({ content }) {
 
 function Products() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-medium pb-8">Our Products</h1>
-      <div className="space-y-12">
-        {myProducts.map((item) => (
-          <div className="" key={item.subTitle}>
-            <h3 className="text-blue-500 text-sm tracking-wide font-semibold mb-4">
-              {item.subTitle}
-            </h3>
-            <div className="relative h-96 w-full bg-gray-800 mb-6"></div>
-            <div className="space-y-6">
-              <h1 className="font-semibold text-2xl">{item.title}</h1>
-              <p className="text-gray-700">{item.description}</p>
-              <ul className="list-none space-y-2">
-                {item.features.map((content) => (
-                  <CheckList key={content} content={content} />
-                ))}
-              </ul>
-            </div>
+    <div className="bg-blue-50">
+      <div className="mx-auto py-20 max-w-screen-lx">
+        <div className="p-6">
+          <h1 className="text-2xl font-medium pb-8">Our Products</h1>
+          <div className="space-y-32">
+            {myProducts.map((item, index) => (
+              <div className={`md:flex md:gap-x-16 ${index % 2 ? 'md:flex-row-reverse' : ''}`} key={item.subTitle}>
+                <div className="relative md:w-[50%] h-80 bg-gray-800 mb-6">
+                  <Image
+                    src={item.img}
+                    fill
+                    alt={item.subTitle} 
+                  />
+                </div>
+                <div className="space-y-6 w-full">
+                  <h1 className="font-semibold text-2xl">{item.title}</h1>
+                  <h3 className="text-blue-600 text-base tracking-wide font-medium mb-4">
+                    {item.subTitle}
+                  </h3>
+                  <p className="text-gray-700">{item.description}</p>
+                  <ul className="list-none space-y-2">
+                    {item.features.map((content) => (
+                      <CheckList key={content} content={content} />
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );

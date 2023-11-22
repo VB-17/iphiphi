@@ -1,4 +1,3 @@
-import { isPagesAPIRouteMatch } from "next/dist/server/future/route-matches/pages-api-route-match";
 import Image from "next/image";
 
 const data = {
@@ -42,7 +41,7 @@ const data = {
 
 function ListItem({ content }) {
   return (
-    <li className="flex items-center">
+    <li className="flex items-center max-w-sm">
       <span className="block outline outline-2 mx-2 mr-4 outline-green-600 outline-offset-4 h-1 w-1 rounded-full bg-green-600"></span>
       <span className="text-gray-600">{content}</span>
     </li>
@@ -51,54 +50,58 @@ function ListItem({ content }) {
 
 function Services() {
   return (
-    <div className="p-4">
-      <h2 className="text-2xl font-semibold pb-10">Our Future Potential</h2>
-      <div className="space-y-16 md:space-y-0 md:grid md:gap-x-10 md:gap-y-16 md:grid-cols-2 ">
-        {data.productList.map((item) => (
-          <ProductCard
-            key={item.img}
-            img={item.img}
-            title={item.title}
-            description={item.description}
-          />
-        ))}
-      </div>
-
-      <div class="relative flex pt-32 items-center">
-        <div class="flex-grow border-t border-gray-600"></div>
-        <span class="flex-shrink mx-4 text-gray-600 text-lg font-light">
-          Features &amp; Benifits
-        </span>
-        <div class="flex-grow border-t border-gray-600"></div>
-      </div>
-
-      <div className="pt-16 space-y-4 lg:flex">
-        <div className="md:flex md:justify-between">
-          <div className="">
-            <h1 className="text-xl">Features</h1>
-            <ul className="py-6 space-y-2">
-              {data.features.map((text) => (
-                <ListItem key={text} content={text} />
-              ))}
-            </ul>
+    <div className="bg-blue-50">
+      <div className="mx-auto max-w-screen-lx py-20 pb-48">
+        <div className="p-6">
+          <h2 className="text-2xl font-semibold pb-10">Our Future Potential</h2>
+          <div className="space-y-16 md:space-y-0 md:grid md:gap-x-10 md:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+            {data.productList.map((item) => (
+              <ProductCard
+                key={item.img}
+                img={item.img}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
           </div>
-          <div>
-            <h1 className="text-xl">Benefits</h1>
 
-            <ul className="py-6 space-y-2">
-              {data.benifits.map((text) => (
-                <ListItem key={text} content={text} />
-              ))}
-            </ul>
+          <div className="relative flex pt-28 items-center">
+            <div className="flex-grow border-t border-gray-600"></div>
+            <span className="flex-shrink mx-4 text-gray-600 text-lg font-light">
+              Features &amp; Benifits
+            </span>
+            <div className="flex-grow border-t border-gray-600"></div>
           </div>
-        </div>
-        <div className="relative w-full h-64 mx-auto mt-8 ">
-          <Image
-            src={"/features.webp"}
-            fill
-            className="object-cover rounded-md"
-            alt="hello"
-          />
+
+          <div className="pt-16 space-y-4 lg:flex">
+            <div className="md:flex md:justify-between">
+              <div className="">
+                <h1 className="text-xl">Features</h1>
+                <ul className="py-6 space-y-2">
+                  {data.features.map((text) => (
+                    <ListItem key={text} content={text} />
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h1 className="text-xl">Benefits</h1>
+
+                <ul className="py-6 space-y-2">
+                  {data.benifits.map((text) => (
+                    <ListItem key={text} content={text} />
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="relative w-full md:w-1/3 h-64 mx-auto mt-8 ">
+              <Image
+                src={"/features.webp"}
+                fill
+                className="object-cover rounded-md"
+                alt="hello"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

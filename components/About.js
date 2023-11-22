@@ -2,9 +2,9 @@ import React from "react";
 
 function About() {
   return (
-    <div className="px-4 py-12 bg-blue-50">
-      <div className="max-w-screen-xl mx-auto">
-        <h1 className="text-2xl font-medium pb-8">About iPhiPhi</h1>
+    <div className="p-6 py-32 relative">
+      <div className="mx-auto max-w-screen-lx">
+        <h1 className="text-3xl font-medium pb-8">About iPhiPhi</h1>
         <div className="space-y-8 font-light">
           <p className="leading-relaxed">
             Welcome to iPhiPi, started by Pankaj Joshi's his vision propels us

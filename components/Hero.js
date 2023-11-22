@@ -3,9 +3,9 @@ import Image from "next/image";
 function Hero() {
   return (
     <div className="bg-blue-50 px-4 py-16 md:px-8 ">
-      <div className="max-w-screen-xl mx-auto md:py-20 md:flex md:justify-between md:gap-x-10">
+      <div className="max-w-screen-lx mx-auto md:py-20 md:flex md:justify-between md:gap-x-10">
         <div className="md:pt-0 space-y-8 text-center md:text-left">
-          <h1 className="font-bold lg:text-[60px] lg:leading-tight text-3xl md:text-4xl  ">
+          <h1 className="font-semibold lg:text-[60px] lg:leading-tight text-3xl md:text-4xl  ">
             Revolutionizing Audio with AI Technology
           </h1>
           <p className="font-light md:max-w-lg  text-gray-700">

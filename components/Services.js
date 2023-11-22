@@ -53,7 +53,7 @@ function Services() {
     <div className="bg-blue-50" id="future">
       <div className="mx-auto max-w-screen-lx py-20 pb-48">
         <div className="p-6">
-          <h2 className="text-2xl font-semibold pb-10">Our Future Potential</h2>
+          <h2 className="text-3xl font-medium  pb-10">Our Future Potential</h2>
           <div className="space-y-16 md:space-y-0 md:grid md:gap-x-10 md:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
             {data.productList.map((item) => (
               <ProductCard

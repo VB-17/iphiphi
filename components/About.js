@@ -3,8 +3,8 @@ import React from "react";
 function About() {
   return (
     <div className="p-6 py-32 relative" id="about">
-      <div className="mx-auto max-w-screen-lx">
-        <h1 className="text-3xl font-medium pb-8">About iPhiPhi</h1>
+      <div className="mx-auto max-w-screen-lx p-6">
+        <h1 className="text-3xl font-medium pb-8">About iPhiPi</h1>
         <div className="space-y-8 font-light">
           <p className="leading-relaxed">
             Welcome to iPhiPi, started by Pankaj Joshi&apos;s his vision propels us

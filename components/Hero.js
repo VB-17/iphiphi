@@ -7,15 +7,11 @@ function Hero() {
       <div className="max-w-screen-lx mx-auto md:py-20 md:flex md:justify-between md:gap-x-10">
         <div className="md:pt-0 space-y-8 text-center md:text-left">
           <h1 className="font-semibold lg:text-[60px] lg:leading-tight text-3xl md:text-4xl  ">
-            Revolutionizing Audio with AI Technology
+            Intelligent Sensors for AI Smart Products.
           </h1>
-          <p className="font-light md:max-w-lg  text-gray-700">
-            At iPhiPi, we design and manufacture cutting-edge smart chips that
-            harness the power of artificial intelligence to transform audio
-            experiences.
-          </p>
+          <p className="font-light md:max-w-lg  text-gray-700"></p>
 
-          <Link href="#about">
+          <Link href="#products">
             <button
               type="button"
               className="font-medium text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-600 rounded-lg text-sm px-7 py-4 mt-6 mb-2 "

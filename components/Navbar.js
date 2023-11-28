@@ -20,12 +20,15 @@ function Footer() {
         </div>
         <div
           className={`nav-links duration-200 md:static absolute bg-white md:min-h-fit min-h-[28vh] left-0 ${
-            open ? "top-0 translate-y-16" : "top-[-100%]"
+            open ? "top-0 translate-y-16" : "top-[-350%]"
           } md:w-auto  w-full flex items-center px-5`}
         >
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             <li>
-              <Link className="hover:text-blue-500 text-[15px] " href="#products">
+              <Link
+                className="hover:text-blue-500 text-[15px] "
+                href="#products"
+              >
                 Products
               </Link>
             </li>

@@ -4,15 +4,17 @@ import Partners from "@/components/Partners";
 import Products from "@/components/Products";
 import Services from "@/components/Services";
 import "./main.css";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <Partners />
-      <Products/>
-      <About/>
-      <Services/>
+      <Products />
+      <About />
+      <Services />
+      <Contact />
     </div>
   );
 }

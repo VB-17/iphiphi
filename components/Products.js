@@ -7,7 +7,7 @@ const myProducts = [
     subTitle: "Intelligent TWS",
     title: "Intelligent Mics for TWS",
     description:
-      "Transform your TWS earbuds into super performers with our cost-effective AI-infused chips.  As a AI Sensor solution provider, we specialize in transforming regular TWS into high-performance audio marvels. Dive into pristine sound and elevate your audio experience effortlessly.",
+      "Transform your TWS earbuds into super performers with our AI Sensor solution provider, we specialize in transforming regular TWS into high-performance audio marvels. Dive into pristine sound and elevate your audio experience effortlessly.",
     features: [
       "Active Noise Cancellation",
       "Environment detection",
@@ -20,7 +20,7 @@ const myProducts = [
     subTitle: "Intelligent Mics for Call Centers",
     title: "Intelligent Mics for Contact Center Headphones",
     description:
-      "Our intelligent microphones for call centeres are design to enhance near communication in a call center environment. With features like acoustic fencing and bubble mic, which captures sounds only within the users's bubble, background noise and nearby communications are minimized ensuring cyrstal clear interactions for both agents and customers",
+      "Our intelligent microphones for call centeres are design to enhance communication in a call center environment. With features like acoustic fencing and bubble mic, which captures sounds only within the users's bubble, background noise and nearby communications are minimized ensuring cyrstal clear interactions for both agents and customers",
 
     features: ["Acoustic fencing", "Conversation Limiting", "Bubble Mic"],
   },

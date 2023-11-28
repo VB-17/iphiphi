@@ -35,7 +35,7 @@ function Partners() {
         <h1 className="text-3xl pb-8 font-medium">Our Partners</h1>
         <p className="font-light">
           A network of trusted partners driving innovation alongside us in
-          reshaping the landscape of AI-infused audio technology.
+          reshaping the landscape of AI-infused audio sensor technology.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-5 py-12 items-center md:flex-row justify-center gap-y-16 md:gap-x-16">

@@ -50,12 +50,12 @@ function About() {
                     />
                   </div>
 
-                  <div className="space-y-4 md:text-left">
+                  <div className="space-y-2 md:text-left">
                     <h3 className="font-medium text-center md:text-left ">
                       Pankaj Joshi - B. Tech IIT Kharagpur, MSEE Univ of Hawaii
                       USA, MBA INSEAD.
                     </h3>
-                    <p className="leading-relaxed">
+                    <p className="leading-relaxed text-sm">
                       In the last 20 years, Pankaj has been part of 6 startups
                       as an early employee, leadership team and as a founder
                       CEO. His recent ventures inclue MeamiTech: Deep learning
@@ -80,12 +80,12 @@ function About() {
                     />
                   </div>
 
-                  <div className="space-y-4 md">
+                  <div className="space-y-2">
                     <h3 className="font-medium text-center md:text-left">
                       Sumita Thakur - B.Tech NIT Durgapur, MS Univ of Hawaii,
                       USA
                     </h3>
-                    <p className="leading-relaxed">
+                    <p className="leading-relaxed text-sm">
                       Sumita is currently head of Head - Programs & Outreach,
                       School of Innovation & Entrepreneurship, IIT Hyderabad.
                       Successfully launched multiple new products (programs),
@@ -112,11 +112,11 @@ function About() {
                     />
                   </div>
 
-                  <div className="space-y-4">
+                  <div className="space-y-2">
                     <h3 className="font-medium text-center md:text-left ">
                       Doug Makishima, CSMO Summittech
                     </h3>
-                    <p className="leading-[1.8]">
+                    <p className="leading-relaxed text-sm">
                       Doug Makishima is a seasoned C-level executive, startup
                       adviser and angel investor with deep experience in cloud
                       edge computing, AI, wireless mobile communications, IoT,

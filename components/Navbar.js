@@ -39,7 +39,7 @@ function Footer() {
             </li>
             <li>
               <Link className="hover:text-blue-500 text-[15px] " href="#future">
-                Future Services
+                Services
               </Link>
             </li>
           </ul>

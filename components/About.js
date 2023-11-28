@@ -58,8 +58,9 @@ function About() {
                     <p className="leading-relaxed text-sm">
                       In the last 20 years, Pankaj has been part of 6 startups
                       as an early employee, leadership team and as a founder
-                      CEO. His recent ventures inclue MeamiTech: Deep learning
-                      based Audio AI IP for voice speech enhancement.
+                      CEO. He was most recently head of product at Meeamitech, a
+                      deep learning based Audio AI IP for voicce and speech
+                      enhnacement.
                     </p>
 
                     {/* <ul className="list-none space-y-3">

@@ -9,23 +9,23 @@ const data = {
   productList: [
     {
       icon: <CircleStackIcon className="h-6 w-6" />,
-      title: "Data Services",
+      title: "Data Collection",
       description:
-        "From meticulous data collection to precise annotation and labeling, seamless data augmentation, and thorough validation—unlock the full potential of your data with our comprehensive services.",
+        "We specialize in diverse data collection services encompassing multilingual speech, conversational speech, music classification, speaker identification, sound classification, emotional speech, wake word detection, and noise data.",
     },
 
     {
       icon: <WrenchScrewdriverIcon className="h-6 w-6" />,
-      title: "Engineering Services",
+      title: "Data Augmentation",
       description:
-        "Empower your projects with our top-tier engineering services. From seamless porting and optimization to rigorous testing and cutting-edge firmware development, we've got your engineering needs covered.",
+        "We offer comprehensive data augmentation services, covering everything from transforming parts of speech to injecting spelling and context-specific noise. Our expertise extends to creative augmentation, audio scene simulation, and precise timing adjustments, ensuring your dataset reflects real-world scenarios accurately for optimized model performance.",
     },
 
     {
       icon: <CpuChipIcon className="h-6 w-6" />,
-      title: "Manufacturing Smart Chips",
+      title: "Data Labelling",
       description:
-        "Elevate your audio experience with our AI-powered smart chips. Unleash additional features and enhance audio devices with cutting-edge technology, setting new standards for innovation and performance.",
+        "We excel in data annotation, labeling, and validation services covering a wide range of areas. This includes noise labeling, speech transcript correction, intent-sentiment-emotion annotation, speaker diarization annotation, voice/unvoiced region labeling with precise time stamping, phoneme labeling, and named entity annotation.",
     },
   ],
   features: [
@@ -63,49 +63,11 @@ function Services() {
             {data.productList.map((item) => (
               <ProductCard
                 key={item.img}
-                img={item.img}
+                icon={item.icon}
                 title={item.title}
                 description={item.description}
               />
             ))}
-          </div>
-
-          <div className="relative flex pt-28 items-center">
-            <div className="flex-grow border-t border-gray-600"></div>
-            <span className="flex-shrink mx-4 text-gray-600 text-lg font-light">
-              Features &amp; Benifits
-            </span>
-            <div className="flex-grow border-t border-gray-600"></div>
-          </div>
-
-          <div className="pt-16 space-y-4 lg:flex">
-            <div className="md:flex md:justify-between">
-              <div className="">
-                <h1 className="text-xl">Features</h1>
-                <ul className="py-6 space-y-2">
-                  {data.features.map((text) => (
-                    <ListItem key={text} content={text} />
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h1 className="text-xl">Benefits</h1>
-
-                <ul className="py-6 space-y-2">
-                  {data.benifits.map((text) => (
-                    <ListItem key={text} content={text} />
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="relative w-full md:w-1/3 h-64 mx-auto mt-8 ">
-              <Image
-                src={"/features.webp"}
-                fill
-                className="object-cover rounded-md"
-                alt="hello"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -117,11 +79,13 @@ function ProductCard({ icon, title, description }) {
   return (
     <div className="space-y-4 bg-white p-8 rounded-md">
       <div className=" inline-block p-4 rounded-full bg-blue-700 text-white">
-        <CpuChipIcon className="h-7 w-7" />
+        {icon}
       </div>
       <div className="space-y-3">
         <h2 className="text-lg font-medium">{title}</h2>
-        <p className="text-sm leading-relaxed font-light text-gray-700">{description}</p>
+        <p className="text-sm leading-relaxed font-light text-gray-700">
+          {description}
+        </p>
       </div>
     </div>
   );

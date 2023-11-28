@@ -21,11 +21,10 @@ function ListItem({ content }) {
 }
 
 function About() {
-
   return (
     <div className="md:p-6 py-32 relative" id="about">
       <div className="mx-auto max-w-screen-lx p-6">
-        <h1 className="text-3xl font-medium pb-8">About iPhiPi</h1>
+        <h1 className="text-3xl font-medium pb-8">About IPHIPI</h1>
         <div className="space-y-8 font-light">
           <p className="leading-relaxed">
             IPHIPI is started with a vision to enable all devices to become “AI
@@ -35,13 +34,13 @@ function About() {
             intuitive and seamless.
           </p>
 
-          <div className="space-y-16 ">
+          <div className="space-y-10 ">
             {/* directors */}
             <div>
               <h2 className="text-2xl font-medium mb-6">Directors</h2>
-              <div className="md:gap-16 space-y-16">
-                <div className="space-y-4 md:grid md:grid-cols-2 md:gap-16">
-                  <div className="relative mx-auto w-72 my-8 aspect-square md:w-full md:my-0 ">
+              <div className="md:grid md:grid-cols-2 md:gap-16 md:space-y-0">
+                <div className="space-y-4 md:space-y-0 md:grid md:grid-cols-[1fr_2fr] md:items-start md:gap-x-6">
+                  <div className="relative w-72 my-8 aspect-square md:w-full md:my-0 ">
                     <Image
                       src={"/pankaj.jpeg"}
                       alt="Pankaj joshi"
@@ -56,46 +55,41 @@ function About() {
                       Pankaj Joshi - B. Tech IIT Kharagpur, MSEE Univ of Hawaii
                       USA, MBA INSEAD.
                     </h3>
-                    <p>
+                    <p className="leading-relaxed">
                       In the last 20 years, Pankaj has been part of 6 startups
                       as an early employee, leadership team and as a founder
-                      CEO.
+                      CEO. His recent ventures inclue MeamiTech: Deep learning
+                      based Audio AI IP for voice speech enhancement.
                     </p>
 
-                    <ul className="list-none space-y-3">
+                    {/* <ul className="list-none space-y-3">
                       {points.map((item) => (
                         <ListItem key={item} content={item} />
                       ))}
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
-                <div className="space-y-4 md:grid md:grid-cols-2 md:gap-16">
-                  <div className="relative my-8 w-72 mx-auto aspect-square md:w-full md:my-0">
+                <div className="space-y-4 md:space-y-0 md:grid md:grid-cols-[1fr_2fr] md:items-start md:gap-x-6">
+                  <div className="relative w-72 my-8 aspect-square md:w-full md:my-0">
                     <Image
                       src={"/sumita.jpeg"}
                       alt="Sumita"
                       fill
                       objectPosition="bottom "
-                      className="object-contain "
+                      className=" "
                     />
                   </div>
 
                   <div className="space-y-4 md">
                     <h3 className="font-medium text-center md:text-left">
-                      Sumita Thakur - B.Tech NIT Durgapur, MS Univ of Hawaii, USA
+                      Sumita Thakur - B.Tech NIT Durgapur, MS Univ of Hawaii,
+                      USA
                     </h3>
-                    <p className="leading-[1.8]">
+                    <p className="leading-relaxed">
                       Sumita is currently head of Head - Programs & Outreach,
                       School of Innovation & Entrepreneurship, IIT Hyderabad.
-                      She has two decades of Experienced higher education
-                      professional with leadership roles in business growth,
-                      marketing, brand and product management for the higher
-                      education industry. Successfully launched multiple new
-                      products (programs), customer acquisition in new markets
-                      and categories. Served as Admissions Head for top
-                      Institute. Consulting Experience in online learning for
-                      professionals. Currently working in the admission and
-                      program aspects of undergraduate education.
+                      Successfully launched multiple new products (programs),
+                      customer acquisition in new markets and categories
                     </p>
                   </div>
                 </div>
@@ -103,34 +97,33 @@ function About() {
             </div>
 
             {/* advisors */}
+
             <div>
               <h2 className="text-2xl font-medium mb-6">Advisors</h2>
-              <div className="space-y-4 md:grid md:grid-cols-2 md:gap-16">
-                <div className="relative my-8 w-72 mx-auto aspect-square md:w-full md:my-0">
-                  <Image
-                    src={"/doug-makishima.jpeg"}
-                    alt="Doug makishima"
-                    fill
-                    objectPosition="bottom"
-                    className="object-cover "
-                  />
-                </div>
+              <div className="md:grid md:grid-cols-2 md:gap-16 md:space-y-0">
+                <div className="space-y-4 md:space-y-0 md:grid md:grid-cols-[1fr_2fr] md:items-start md:gap-x-6">
+                  <div className="relative w-72 my-8 aspect-square md:w-full md:my-0">
+                    <Image
+                      src={"/doug-makishima.jpeg"}
+                      alt="Doug makishima"
+                      fill
+                      objectPosition="bottom"
+                      className="object-cover "
+                    />
+                  </div>
 
-                <div className="space-y-4">
-                  <h3 className="font-medium text-center md:text-left ">
-                    Doug Makishima, CSMO Summittech
-                  </h3>
-                  <p className="leading-[1.8]">
-                    Doug Makishima is a seasoned C-level executive, startup
-                    adviser and angel investor with deep experience in cloud
-                    edge computing, AI, wireless mobile communications, IoT,
-                    networking & storage, e-commerce and blockchain
-                    technologies. Doug is a thought leader and visionary with a
-                    keen understanding of the wireless, mobile device and IoT
-                    ecosystem. He has a solid track record of delivering to and
-                    collaborating with telecom operators, enterprises, mobile
-                    device OEMs, infrastructure vendors, and SoC / IC vendors.
-                  </p>
+                  <div className="space-y-4">
+                    <h3 className="font-medium text-center md:text-left ">
+                      Doug Makishima, CSMO Summittech
+                    </h3>
+                    <p className="leading-[1.8]">
+                      Doug Makishima is a seasoned C-level executive, startup
+                      adviser and angel investor with deep experience in cloud
+                      edge computing, AI, wireless mobile communications, IoT,
+                      networking & storage, e-commerce and blockchain
+                      technologies.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

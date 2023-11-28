@@ -7,10 +7,10 @@ const myProducts = [
     subTitle: "Intelligent TWS",
     title: "Intelligent Mics for TWS",
     description:
-      "Transform your TWS earbuds into super performers with our cost-effective AI-infused chips.  As a leading chip manufacturer, we specialize in transforming regular TWS into high-performance audio marvels. Dive into pristine sound and elevate your audio experience effortlessly.",
+      "Transform your TWS earbuds into super performers with our cost-effective AI-infused chips.  As a AI Sensor solution provider, we specialize in transforming regular TWS into high-performance audio marvels. Dive into pristine sound and elevate your audio experience effortlessly.",
     features: [
       "Active Noise Cancellation",
-      "Auto Noise Cancellation",
+      "Environment detection",
       "Conversation Awareness",
     ],
   },
@@ -20,9 +20,9 @@ const myProducts = [
     subTitle: "Intelligent Mics for Call Centers",
     title: "Intelligent Mics for Contact Center Headphones",
     description:
-      "Our intelligent microphones for call centeres are design to enhance communication. With features like acoustic fetching and bubble mic, which captures sounds only within the users's bubble, background noise in the minimized ensuring cyrstal clear interactions for both agents and customers",
+      "Our intelligent microphones for call centeres are design to enhance near communication in a call center environment. With features like acoustic fencing and bubble mic, which captures sounds only within the users's bubble, background noise and nearby communications are minimized ensuring cyrstal clear interactions for both agents and customers",
 
-    features: ["Acoustic fetching", "Denoising Level Control", "Bubble Mic"],
+    features: ["Acoustic fencing", "Conversation Limiting", "Bubble Mic"],
   },
 
   {
@@ -30,12 +30,12 @@ const myProducts = [
     subTitle: "",
     title: "Intelligent Mics for Two Way Radios",
     description:
-      "Elevate your two-way radio experience with our AI-infused chip, redefining intelligent communication. From active noise cancellation to environment awareness, unlock a new level of seamless innovation. Stay on the cutting edge with automatic updates, making your two-way radio truly intelligent—an evolution beyond the ordinary. Upgrade your communication game with our state-of-the-art AI chip.",
+      "Elevate your two-way radio experience with our AI mic solution, redefining intelligent communication. Supress outdoor noises such as sirens, engine noise, traffic noise which guarantees clear mission critical communication. Enable handsfree operation with voice activation control.",
 
     features: [
-      "Minimizing Ambience Disturbance",
+      "Minimizing Outdoor Disturbance",
       "Denoising Level Control",
-      "Active noise cancelling",
+      "Handsfree Operation",
     ],
   },
 ];

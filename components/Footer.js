@@ -67,7 +67,7 @@ function Footer() {
             className="font-semibold text-neutral-600 dark:text-neutral-400"
             href="#"
           >
-            IPhiPi
+            IPHIPI
           </a>
         </div>
       </footer>

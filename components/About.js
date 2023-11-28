@@ -20,9 +20,6 @@ function ListItem({ content }) {
   );
 }
 
-const initValues = { name: "", email: "", subject: "", message: "" };
-const initState = { isLoading: false, error: "", values: initValues };
-
 function About() {
 
   return (
@@ -56,8 +53,8 @@ function About() {
 
                   <div className="space-y-4 md:text-left">
                     <h3 className="font-medium text-center md:text-left ">
-                      Pankaj Joshi, B.tech IIT Kharagpur, MSEE Univ of Hawaii,
-                      USA and MBA INSEAD.
+                      Pankaj Joshi - B. Tech IIT Kharagpur, MSEE Univ of Hawaii
+                      USA, MBA INSEAD.
                     </h3>
                     <p>
                       In the last 20 years, Pankaj has been part of 6 startups
@@ -85,7 +82,7 @@ function About() {
 
                   <div className="space-y-4 md">
                     <h3 className="font-medium text-center md:text-left">
-                      Sumita Thakur, B.Tech NIT Durgapur, MS Univ of Hawaii, USA
+                      Sumita Thakur - B.Tech NIT Durgapur, MS Univ of Hawaii, USA
                     </h3>
                     <p className="leading-[1.8]">
                       Sumita is currently head of Head - Programs & Outreach,

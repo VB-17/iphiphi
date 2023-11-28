@@ -7,7 +7,7 @@ function Hero() {
       <div className="max-w-screen-lx mx-auto md:py-20 md:flex md:justify-between md:gap-x-10">
         <div className="md:pt-0 space-y-8 text-center md:text-left">
           <h1 className="font-semibold lg:text-[60px] lg:leading-tight text-3xl md:text-4xl  ">
-            Intelligent Sensors for AI Smart Products.
+            Intelligent Sensors for "AI Smart" Products.
           </h1>
           <p className="font-light md:max-w-lg  text-gray-700"></p>
 

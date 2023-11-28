@@ -24,6 +24,16 @@ const myProducts = [
 
     features: ["Acoustic fetching", "Denoising Level Control", "Bubble Mic"],
   },
+
+  {
+    img: "/pr1.webp",
+    subTitle: "Intelligent Mics for Call Centers",
+    title: "Boost Productivity and Clarity with Intelligent Call Center Mics",
+    description:
+      "Our intelligent microphones for call centeres are design to enhance communication. With features like acoustic fetching and bubble mic, which captures sounds only within the users's bubble, background noise in the minimized ensuring cyrstal clear interactions for both agents and customers",
+
+    features: ["Acoustic fetching", "Denoising Level Control", "Bubble Mic"],
+  },
 ];
 
 function CheckList({ content }) {

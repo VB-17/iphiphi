@@ -6,6 +6,8 @@ import Services from "@/components/Services";
 import "./main.css";
 import Contact from "@/components/Contact";
 
+import { Toaster } from "react-hot-toast";
+
 export default function Home() {
   return (
     <div>
@@ -15,6 +17,8 @@ export default function Home() {
       <About />
       <Services />
       <Contact />
+
+      <Toaster />
     </div>
   );
 }

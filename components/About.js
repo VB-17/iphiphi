@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const points = [
@@ -19,7 +20,11 @@ function ListItem({ content }) {
   );
 }
 
+const initValues = { name: "", email: "", subject: "", message: "" };
+const initState = { isLoading: false, error: "", values: initValues };
+
 function About() {
+
   return (
     <div className="md:p-6 py-32 relative" id="about">
       <div className="mx-auto max-w-screen-lx p-6">

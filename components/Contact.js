@@ -5,7 +5,12 @@ import toast from "react-hot-toast";
 // import nodemailer from "nodemailer";
 
 const initValues = { name: "", email: "", subject: "", message: "" };
-const touchedInit = { name: false, email: false, subject: false, message: false };
+const touchedInit = {
+  name: false,
+  email: false,
+  subject: false,
+  message: false,
+};
 
 function Contact() {
   const [values, setValues] = useState(initValues);
@@ -18,45 +23,46 @@ function Contact() {
   const handleChange = ({ target }) =>
     setValues((prev) => ({
       ...prev,
-      [target.name]: target.value
+      [target.name]: target.value,
     }));
 
-  const onSubmit = async () => {
-    const transporter = nodemailer.createTransport({
-      service: 'gmail', 
-      auth: {
-        user: process.env.EMAIL,
-        pass: process.env.PASS,
-      },
-    });
+  const onSubmit = async () => {};
+  // const onSubmit = async () => {
+  //   const transporter = nodemailer.createTransport({
+  //     service: 'gmail',
+  //     auth: {
+  //       user: process.env.EMAIL,
+  //       pass: process.env.PASS,
+  //     },
+  //   });
 
-    const mailOptions = {
-      from: process.env.EMAIL, 
-      to: process.env.EMAIL,
-      subject: 'Test Email',
-      text: 'This is a test email sent using Nodemailer.',
-      html: '<p>This is a test email sent using <b>Nodemailer</b>.</p>', 
-    };
+  //   const mailOptions = {
+  //     from: process.env.EMAIL,
+  //     to: process.env.EMAIL,
+  //     subject: 'Test Email',
+  //     text: 'This is a test email sent using Nodemailer.',
+  //     html: '<p>This is a test email sent using <b>Nodemailer</b>.</p>',
+  //   };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        console.error('Error occurred while sending email:', error);
-      } else {
-        console.log('Email sent:', info.response);
-      }
-    });
+  //   transporter.sendMail(mailOptions, (error, info) => {
+  //     if (error) {
+  //       console.error('Error occurred while sending email:', error);
+  //     } else {
+  //       console.log('Email sent:', info.response);
+  //     }
+  //   });
 
-    // setLoading(true)
-    // try {
-    //   await sendContactForm(values);
-    //   setTouched(touchedInit);
-    //   setValues(initState);
-    //   toast.success("Email Sent");
-    // } catch (error) {
-    //   setLoading(false);
-    //   toast.error("Some error occured");
-    // }
-  };
+  //   // setLoading(true)
+  //   // try {
+  //   //   await sendContactForm(values);
+  //   //   setTouched(touchedInit);
+  //   //   setValues(initState);
+  //   //   toast.success("Email Sent");
+  //   // } catch (error) {
+  //   //   setLoading(false);
+  //   //   toast.error("Some error occured");
+  //   // }
+  // };
   return (
     <div className="mx-auto py-20 max-w-screen-lx md:grid md:grid-cols-2 md:gap-16">
       <div className="my-auto">
@@ -73,7 +79,7 @@ function Contact() {
           <h2 className="mb-8 text-4xl tracking-tight font-semibold t text-gray-900">
             Contact Us
           </h2>
-          <form action="POST" className="space-y-8">
+          <form action="" className="space-y-8">
             <div>
               <label
                 htmlFor="name"
@@ -159,11 +165,14 @@ function Contact() {
                 !values.message
               }
               onClick={onSubmit}
-              className={`${!values.name ||
+              className={`${
+                !values.name ||
                 !values.email ||
                 !values.subject ||
                 !values.message
-                ? 'bg-blue-300' : 'bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-primary-300'} py-4 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit`}
+                  ? "bg-blue-300"
+                  : "bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
+              } py-4 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit`}
             >
               Send message
             </button>

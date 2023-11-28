@@ -1,26 +1,31 @@
 import Image from "next/image";
+import {
+  CpuChipIcon,
+  WrenchScrewdriverIcon,
+  CircleStackIcon,
+} from "@heroicons/react/24/outline";
 
 const data = {
   productList: [
     {
-      img: "/product1.webp",
-      title: "Intelligent Mics",
+      icon: <CircleStackIcon className="h-6 w-6" />,
+      title: "Data Services",
       description:
-        "Our intelligent mic solutions deliver exceptional voice quality in any environment, using advanced noise-cancellation and voice enhancement technology for clear communication.",
+        "From meticulous data collection to precise annotation and labeling, seamless data augmentation, and thorough validation—unlock the full potential of your data with our comprehensive services.",
     },
 
     {
-      img: "/product2.webp",
-      title: "AI-Powered Audio Solutions",
+      icon: <WrenchScrewdriverIcon className="h-6 w-6" />,
+      title: "Engineering Services",
       description:
-        "Experience the next generation of audio solutions with our AI-powered technology designed to deliver exceptional sound quality and clarity.",
+        "Empower your projects with our top-tier engineering services. From seamless porting and optimization to rigorous testing and cutting-edge firmware development, we've got your engineering needs covered.",
     },
 
     {
-      img: "/product3.webp",
-      title: "Hearing Enhancements",
+      icon: <CpuChipIcon className="h-6 w-6" />,
+      title: "Manufacturing Smart Chips",
       description:
-        "Our hearing enhancement solutions use advanced audio processing technology to amplify sounds and reduce background noise, improving communication for individuals with hearing impairments.",
+        "Elevate your audio experience with our AI-powered smart chips. Unleash additional features and enhance audio devices with cutting-edge technology, setting new standards for innovation and performance.",
     },
   ],
   features: [
@@ -53,8 +58,8 @@ function Services() {
     <div className="bg-blue-50" id="future">
       <div className="mx-auto max-w-screen-lx py-20 pb-48">
         <div className="p-6">
-          <h2 className="text-3xl font-medium  pb-10">Our Future Potential</h2>
-          <div className="space-y-16 md:space-y-0 md:grid md:gap-x-10 md:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+          <h2 className="text-3xl font-medium  pb-10">Our Services</h2>
+          <div className="space-y-16 md:space-y-0 md:grid md:gap-x-6 md:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
             {data.productList.map((item) => (
               <ProductCard
                 key={item.img}
@@ -108,22 +113,15 @@ function Services() {
   );
 }
 
-function ProductCard({ img, title, description }) {
+function ProductCard({ icon, title, description }) {
   return (
-    <div className="space-y-4">
-      <div className="relative h-80 mx-auto ">
-        <Image
-          src={img}
-          fill
-          objectFit="cover"
-          objectPosition=""
-          className="rounded-md"
-          alt="hello"
-        />
+    <div className="space-y-4 bg-white p-8 rounded-md">
+      <div className=" inline-block p-4 rounded-full bg-blue-700 text-white">
+        <CpuChipIcon className="h-7 w-7" />
       </div>
       <div className="space-y-3">
         <h2 className="text-lg font-medium">{title}</h2>
-        <p className="font-light text-gray-700">{description}</p>
+        <p className="text-sm leading-relaxed font-light text-gray-700">{description}</p>
       </div>
     </div>
   );

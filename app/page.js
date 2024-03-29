@@ -17,7 +17,6 @@ export default function Home() {
       <About />
       <Services />
       <Contact />
-
       <Toaster />
     </div>
   );

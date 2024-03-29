@@ -27,9 +27,9 @@ function About() {
         <h1 className="text-3xl font-medium pb-8">About IPHIPI</h1>
         <div className="space-y-8 font-light">
           <p className="leading-relaxed">
-            IPHIPI is started with a vision to enable all devices to become “AI
+            IPHIPI is started with a vision to enable all devices to become AI
             Smart using low power, low latency and always on AI sensors designed
-            by IPHIPI.. What this means is that the device will become aware and
+            by IPHIPI. What this means is that the device will become aware and
             independently take some decisions to make the user experience more
             intuitive and seamless.
           </p>
@@ -56,10 +56,10 @@ function About() {
                       USA, MBA INSEAD.
                     </h3>
                     <p className="leading-relaxed text-sm">
-                      In the last 20 years, Pankaj has been part of 6 startups
+                      In the last 20 years, Pankaj has been a part of 6 startups
                       as an early employee, leadership team and as a founder
                       CEO. He was most recently head of product at Meeamitech, a
-                      deep learning based Audio AI IP for voicce and speech
+                      deep learning based Audio AI IP for voice and speech
                       enhnacement.
                     </p>
 
@@ -90,7 +90,7 @@ function About() {
                       Sumita is currently head of Head - Programs & Outreach,
                       School of Innovation & Entrepreneurship, IIT Hyderabad.
                       Successfully launched multiple new products (programs),
-                      customer acquisition in new markets and categories
+                      customer acquisition in new markets and categories.
                     </p>
                   </div>
                 </div>

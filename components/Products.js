@@ -5,30 +5,30 @@ const myProducts = [
   {
     img: "/tws.png",
     subTitle: "Intelligent TWS",
-    title: "Intelligent Mics for TWS",
-    description:
-      "Transform your TWS earbuds into super performers with our AI Sensor solution provider, we specialize in transforming regular TWS into high-performance audio marvels. Dive into pristine sound and elevate your audio experience effortlessly.",
+    title: "AI Mic for TWS",
+    description: "Transform your earbuds to a smart device with AI Mic.",
     features: [
-      "Active Noise Cancellation",
-      "Environment detection",
-      "Conversation Awareness",
+      "AI Environment Noise Cancellation (ENC)",
+      "Auto ANC on/off based on Environmental conditions",
+      "Transparency Mode for environment awareness",
+      "Voice commands and control",
     ],
   },
 
   {
     img: "/pr1.webp",
     subTitle: "Intelligent Mics for Call Centers",
-    title: "Intelligent Mics for Contact Center Headphones",
+    title: "AI Mic for Contact Center Headphones",
     description:
-      "Our intelligent microphones for call centeres are design to enhance communication in a call center environment. With features like acoustic fencing and bubble mic, which captures sounds only within the users's bubble, background noise and nearby communications are minimized ensuring cyrstal clear interactions for both agents and customers",
+      "AI mic for call center headphones are designed to enhance call center environment by blocking nearby conversation and background voice noises",
 
-    features: ["Acoustic fencing", "Conversation Limiting", "Bubble Mic"],
+    features: ["Bubble Mic", "Background voice suppression", "ENC on playback"],
   },
 
   {
     img: "/radio.jpeg",
     subTitle: "",
-    title: "Intelligent Mics for Two Way Radios",
+    title: "AI Mic for Two Way Radios",
     description:
       "Elevate your two-way radio experience with our AI mic solution, redefining intelligent communication. Supress outdoor noises such as sirens, engine noise, traffic noise which guarantees clear mission critical communication. Enable handsfree operation with voice activation control.",
 
@@ -73,7 +73,7 @@ function Products() {
     <div id="products" className="bg-blue-50">
       <div className="mx-auto py-20 max-w-screen-lx">
         <div className="p-6">
-          <h1 className="text-3xl font-medium pb-12">Our Products</h1>
+          <h1 className="text-3xl font-medium pb-12">Products</h1>
           <div className="space-y-32">
             {myProducts.map((item, index) => (
               <div
@@ -82,7 +82,7 @@ function Products() {
                 }`}
                 key={item.subTitle}
               >
-                <div className="relative w-full h-80 md:h-96 mb-8 md:mb-0 bg-gray-800 rounded-md">
+                <div className="relative w-full md:h-80 mb-8 md:mb-0 bg-gray-800 rounded-md">
                   <Image
                     src={item.img}
                     fill

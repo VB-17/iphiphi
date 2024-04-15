@@ -32,7 +32,7 @@ function Partners() {
   return (
     <div className="">
       <div className="p-6 relative mx-auto max-w-screen-lx gap-y-20 py-28">
-        <h1 className="text-3xl pb-8 font-medium">Our Partners</h1>
+        <h1 className="text-3xl pb-8 font-medium">Development Partner</h1>
         <p className="font-light">
           A network of trusted partners driving innovation alongside us in
           reshaping the landscape of AI-infused audio sensor technology.

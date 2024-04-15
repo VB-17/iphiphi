@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 
@@ -8,7 +7,7 @@ const points = [
   "InsideView: CRM Intelligence, raised $80+ Million",
   "TailCurrent: AI based Digital Marketing Platform, acquired by GenY Media in 2015",
   "HelloSoft: mobile VoIP, acquired by Imagination Technologies in 2011",
-  "Datapath Systems: Semiconductor SERDES IP, acquired by LSI Logic I n 2000",
+  "Datapath Systems: Semiconductor SERDES IP, acquired by LSI Logic in 2000",
 ];
 
 function ListItem({ content }) {
@@ -27,15 +26,22 @@ function About() {
         <h1 className="text-3xl font-medium pb-8">About IPHIPI</h1>
         <div className="space-y-8 font-light">
           <p className="leading-relaxed">
-            IPHIPI is started with a vision to enable all devices to become AI
-            Smart using low power, low latency and always on AI sensors designed
-            by IPHIPI. What this means is that the device will become aware and
-            independently take some decisions to make the user experience more
-            intuitive and seamless.
+            As we gear up for the device AI revolution, miniaturizing AI stands
+            as a pivotal step towards embedding intelligence into everyday
+            gadgets. Shrinking AI algorithms to fit within the confines of small
+            devices such as wearables, earbuds, and IoT sensors opens up a realm
+            of possibilities. This miniaturization empowers these devices to
+            process data locally, enhancing speed, privacy, and efficiency while
+            reducing reliance on cloud computing. With AI condensed into compact
+            forms, devices can seamlessly adapt to user preferences, anticipate
+            needs, and provide personalized experiences on a scale never seen
+            before. The miniaturization of AI heralds a future where
+            intelligence becomes ubiquitous, seamlessly integrated into the
+            fabric of our daily lives.
           </p>
 
           <div className="space-y-10 ">
-            {/* directors */}
+            {/* Directors */}
             <div>
               <h2 className="text-2xl font-medium mb-6">Directors</h2>
               <div className="md:grid md:grid-cols-2 md:gap-16 md:space-y-0">
@@ -70,17 +76,23 @@ function About() {
                     </ul> */}
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Advisors */}
+            <div>
+              <h2 className="text-2xl font-medium mb-6">Advisors</h2>
+              <div className="md:grid md:grid-cols-2 md:gap-16 md:space-y-0">
                 <div className="space-y-4 md:space-y-0 md:grid md:grid-cols-[1fr_2fr] md:items-start md:gap-x-6">
                   <div className="relative w-72 my-8 aspect-square md:w-full md:my-0">
                     <Image
                       src={"/sumita.jpeg"}
                       alt="Sumita"
                       fill
-                      objectPosition="bottom "
+                      objectPosition="bottom"
                       className=" "
                     />
                   </div>
-
                   <div className="space-y-2">
                     <h3 className="font-medium text-center md:text-left">
                       Sumita Thakur - B.Tech NIT Durgapur, MS Univ of Hawaii,
@@ -94,14 +106,6 @@ function About() {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* advisors */}
-
-            <div>
-              <h2 className="text-2xl font-medium mb-6">Advisors</h2>
-              <div className="md:grid md:grid-cols-2 md:gap-16 md:space-y-0">
                 <div className="space-y-4 md:space-y-0 md:grid md:grid-cols-[1fr_2fr] md:items-start md:gap-x-6">
                   <div className="relative w-72 my-8 aspect-square md:w-full md:my-0">
                     <Image

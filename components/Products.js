@@ -82,7 +82,7 @@ function Products() {
                 }`}
                 key={item.subTitle}
               >
-                <div className="relative w-full md:h-80 mb-8 md:mb-0 bg-gray-800 rounded-md">
+                <div className="relative w-full h-72 md:h-80 mb-8 md:mb-0 bg-gray-800 rounded-md">
                   <Image
                     src={item.img}
                     fill

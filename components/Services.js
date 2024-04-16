@@ -8,24 +8,24 @@ import {
 const data = {
   productList: [
     {
-      icon: <CircleStackIcon className="h-6 w-6" />,
-      title: "Data Collection",
+      icon: <CpuChipIcon className="h-6 w-6" />,
+      title: "Custom AI design",
       description:
-        "We specialize in diverse data collection services encompassing multilingual speech, conversational speech, music classification, speaker identification, sound classification, emotional speech, wake word detection, and noise data.",
+        "Unlock the potential of your edge devices with our custom AI design services. We tailor solutions to optimize performance and efficiency for your specific hardware constraints. From data collection and preparation, algorithm development to model deployment, we ensure seamless integration for maximum impact.",
     },
 
     {
       icon: <WrenchScrewdriverIcon className="h-6 w-6" />,
-      title: "Data Augmentation",
+      title: "AI porting on hardware platforms",
       description:
-        "We offer comprehensive data augmentation services, covering everything from transforming parts of speech to injecting spelling and context-specific noise. Our expertise extends to creative augmentation, audio scene simulation, and precise timing adjustments, ensuring your dataset reflects real-world scenarios accurately for optimized model performance.",
+        "Effortlessly migrate AI capabilities to your edge hardware with our expert porting services. We specialize in adapting AI models to diverse edge platforms, ensuring optimal functionality and performance. We have expertise in porting to AI cores, DSP cores, MCUs, CPUs and hybrid hardware architectures.",
     },
 
     {
-      icon: <CpuChipIcon className="h-6 w-6" />,
-      title: "Data Labelling",
+      icon: <CircleStackIcon className="h-6 w-6" />,
+      title: "AI Data Collection and Preparation",
       description:
-        "We excel in data annotation, labeling, and validation services covering a wide range of areas. This includes noise labeling, speech transcript correction, intent-sentiment-emotion annotation, speaker diarization annotation, voice/unvoiced region labeling with precise time stamping, phoneme labeling, and named entity annotation.",
+        "Elevate your data-driven initiatives with our comprehensive collection and preparation services. Leverage our expertise in custom app development tailored for seamless data collection and mining. From cleansing and enrichment to annotation and normalization, we ensure your data is primed for AI insights.",
     },
   ],
   features: [

@@ -18,10 +18,7 @@ function Footer() {
                   height="100"
                 />
               </div>
-              <div>
-                Intelligent Sensors for “AI Smart” Products. Next Generation of
-                AI Smart Chips.
-              </div>
+              <div>AI Mic for Smart Devices</div>
             </div>
             <div className="">
               <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">

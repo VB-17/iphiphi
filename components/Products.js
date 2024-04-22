@@ -99,12 +99,12 @@ function Products() {
                       <iframe
                         width="100%"
                         height="100%"
-                        src="https://www.youtube.com/embed/9E8nJroBppc?si=gGuZgq74iyjZvth9"
+                        src={item.iframeSrc}
                         title="YouTube video player"
                         frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
                         allowfullscreen
+                        referrerpolicy="strict-origin-when-cross-origin"
                         className="rounded-md"
                       ></iframe>
                     </div>

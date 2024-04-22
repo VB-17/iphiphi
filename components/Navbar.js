@@ -33,13 +33,21 @@ function Footer() {
               </Link>
             </li>
             <li>
+              <Link className="hover:text-blue-500 text-[15px] " href="#future">
+                Services
+              </Link>
+            </li>
+            <li>
               <Link className="hover:text-blue-500 text-[15px] " href="#about">
                 About
               </Link>
             </li>
             <li>
-              <Link className="hover:text-blue-500 text-[15px] " href="#future">
-                Services
+              <Link
+                className="hover:text-blue-500 text-[15px] "
+                href="#contact"
+              >
+                Contact us
               </Link>
             </li>
           </ul>

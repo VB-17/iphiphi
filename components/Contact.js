@@ -26,7 +26,7 @@ function Contact() {
       [target.name]: target.value,
     }));
 
-  const onSubmit = async () => { };
+  const onSubmit = async () => {};
   // const onSubmit = async () => {
   //   const transporter = nodemailer.createTransport({
   //     service: 'gmail',
@@ -64,7 +64,10 @@ function Contact() {
   //   // }
   // };
   return (
-    <div className="mx-auto py-20 max-w-screen-lx md:grid md:grid-cols-2 md:gap-16">
+    <div
+      id="contact"
+      className="mx-auto py-20 max-w-screen-lx md:grid md:grid-cols-2 md:gap-16"
+    >
       <div className="my-auto">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d847618.9437944116!2d77.58356171824018!3d17.966233766764997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bce0a03f17ff82b%3A0x9d02e89b98deb496!2sIIIT-H%20%7C%20The%20International%20Institute%20of%20Information%20Technology%20-%20Hyderabad!5e0!3m2!1sen!2sin!4v1701178540581!5m2!1sen!2sin"
@@ -165,13 +168,14 @@ function Contact() {
                 !values.message
               }
               onClick={onSubmit}
-              className={`${!values.name ||
-                  !values.email ||
-                  !values.subject ||
-                  !values.message
+              className={`${
+                !values.name ||
+                !values.email ||
+                !values.subject ||
+                !values.message
                   ? "bg-blue-300"
                   : "bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
-                } py-4 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit`}
+              } py-4 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit`}
             >
               Send message
             </button>

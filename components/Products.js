@@ -1,9 +1,9 @@
-import React from "react";
 import Image from "next/image";
+import React, { useRef, useState } from "react";
 
 const myProducts = [
   {
-    img: "/tws.png",
+    iframeSrc: "https://www.youtube.com/embed/9E8nJroBppc?si=gGuZgq74iyjZvth9",
     subTitle: "Intelligent TWS",
     title: "AI Mic for TWS",
     description: "Transform your earbuds to a smart device with AI Mic.",
@@ -45,7 +45,7 @@ function CheckList({ content }) {
     <li className="flex items-center">
       <span className="flex items-center justify-between bg-green-500 p-1 rounded-full">
         <svg
-          className="flex-shrink-0  w-2 h-2 text-white "
+          className="flex-shrink-0 w-2 h-2 text-white"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -61,14 +61,25 @@ function CheckList({ content }) {
         </svg>
       </span>
 
-      <span className="pt-[2px] ext-gray-700 ml-2 text-base text-gray-700">
-        {content}
-      </span>
+      <span className="pt-[2px] text-gray-700 ml-2 text-base">{content}</span>
     </li>
   );
 }
 
 function Products() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef(null);
+
+  const handleTogglePlay = () => {
+    const video = videoRef.current;
+    if (video && video.paused) {
+      video.play();
+    } else if (video) {
+      video.pause();
+    }
+    setIsPlaying(video ? !video.paused : false);
+  };
+
   return (
     <div id="products" className="bg-blue-50">
       <div className="mx-auto py-20 max-w-screen-lx">
@@ -82,23 +93,37 @@ function Products() {
                 }`}
                 key={item.subTitle}
               >
-                <div className="relative w-full h-72 md:h-80 mb-8 md:mb-0 bg-gray-800 rounded-md">
-                  <Image
-                    src={item.img}
-                    fill
-                    className="object-cover"
-                    alt={item.subTitle}
-                  />
+                <div className="relative w-full h-72 mb-8 md:mb-0 bg-gray-800 rounded-md">
+                  {item.iframeSrc ? (
+                    <div className="relative w-full h-72 mb-8 md:mb-0 bg-gray-800 rounded-md">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/9E8nJroBppc?si=gGuZgq74iyjZvth9"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                        className="rounded-md"
+                      ></iframe>
+                    </div>
+                  ) : (
+                    <Image
+                      src={item.img}
+                      layout="fill"
+                      objectFit="cover"
+                      alt={item.subTitle}
+                      className="rounded-md"
+                    />
+                  )}
                 </div>
                 <div className="space-y-6 w-full">
                   <h1 className="font-semibold text-2xl">{item.title}</h1>
-                  {/* <h3 className="text-blue-600 text-base tracking-wide font-medium ">
-                    {item.subTitle}
-                  </h3> */}
                   <p className="text-gray-700">{item.description}</p>
                   <ul className="list-none space-y-2">
-                    {item.features.map((content) => (
-                      <CheckList key={content} content={content} />
+                    {item.features.map((content, i) => (
+                      <CheckList key={i} content={content} />
                     ))}
                   </ul>
                 </div>

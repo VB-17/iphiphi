@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 const BabyPlayer = () => {
@@ -86,14 +87,14 @@ const BabyPlayer = () => {
             <div className="">
               <div className="progress">
                 {/* {`${Math.floor(isNaN(now) ? 0 : now)}%`} */}
-                <img
+                <Image
                   src="https://krisp.ai/wp-content/themes/krisp-v4/imgs/img_progress_sm.svg"
                   alt=""
                   width={506}
                   height={46}
                 />
                 <div className="playing_progress" style={{ width: `${now}%` }}>
-                  <img
+                  <Image
                     src="https://krisp.ai/wp-content/themes/krisp-v4/imgs/img_progress_sm_active.svg"
                     alt=""
                     width={506}

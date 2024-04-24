@@ -9,6 +9,7 @@ import "./main.css";
 import Contact from "@/components/Contact";
 
 import { Toaster } from "react-hot-toast";
+import Technology from "@/components/Technology";
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
       <Hero />
       <Partners />
       <Products />
-      <About />
+      <Technology />
       <Services />
+      <About />
       <Contact />
       <Toaster />
     </div>

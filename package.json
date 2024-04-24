@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@material-tailwind/react": "^2.1.9",
     "@react-three/drei": "^9.102.6",
     "@react-three/fiber": "^8.16.1",
     "dotenv": "^16.3.1",

@@ -8,12 +8,12 @@ const SupportedApps = () => {
           <h1 className="supported-app-heading font-bold pb-7">
             Krisp works <br /> with any app
           </h1>
-          <p className="font-light mb-2 learn_more_text md:max-w-xl">
+          {/* <p className="font-light mb-2 learn_more_text md:max-w-xl">
             Krisp works with communication apps such as Zoom, Meet, Teams and
             others. It functions as a "smart" layer between your device and any
             online communication platform, eliminating all background noise,
             recording and capturing transcriptions and meeting notes.
-          </p>
+          </p> */}
         </div>
         <div className="supported_apps">
           <Image

@@ -2,8 +2,8 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 const BikePlayer = () => {
-  const BikeNoiseInput = "/Wind__4_-19_842_Input.wav";
-  const BikeNoiseOutput = "/Wind__4_-19_842_Output.wav";
+  const BikeNoiseInput = "/wind_noise_4_-15_814_Input.wav";
+  const BikeNoiseOutput = "/wind_noise_4_-15_814_Output.wav";
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);

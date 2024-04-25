@@ -36,7 +36,9 @@ const Technology = () => {
         <h1 className="text-3xl font-medium pb-8">Technology</h1>
         <div className="grid grid-cols-1 gy-10 md:grid-cols-3 my-10 gap-4">
           <div className="">
-            <div className="subtitle mb-4 md:mb-8">AI Noise Cancellation</div>
+            <div className="subtitle mb-4 md:mb-8">
+              AI ENC for earbuds and wearables
+            </div>
             <div className="description">
               <div className="text-body">
                 World’s smallest AI ENC that consumes less than 1 mW (10%
@@ -46,11 +48,11 @@ const Technology = () => {
               <ul className="mt-4 md:mt-8">
                 <li className="text-body my-2">
                   <i className="fa-regular text-blue-500 text-sm pe-1.5 fa-circle-check"></i>
-                  Calling from earbuds
+                  Clear calls from earbuds
                 </li>
                 <li className="text-body my-2">
                   <i className="fa-regular text-blue-500 text-sm pe-1.5 fa-circle-check"></i>
-                  Calling from smartwatches
+                  Clear calls from smartwatches
                 </li>
               </ul>
               {/* <div className="mt-8">

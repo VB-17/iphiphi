@@ -60,7 +60,14 @@ const Working = () => {
                     form. */}
                   </AccordionBody>
                   <AccordionBody className="md:hidden">
-                    <Image src="/img_benefit_echo.png" alt="" />
+                    <Image
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: "100%", height: "auto" }}
+                      src="/img_benefit_echo.png"
+                      alt=""
+                    />
                   </AccordionBody>
                 </Accordion>
                 <hr className="border-1 border-slate-300" />
@@ -78,7 +85,14 @@ const Working = () => {
                     settings, and we'll handle the rest. */}
                   </AccordionBody>
                   <AccordionBody className="md:hidden">
-                    <Image src="/img_benefit_nc.png" alt="" />
+                    <Image
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: "100%", height: "auto" }}
+                      src="/img_benefit_nc.png"
+                      alt=""
+                    />
                   </AccordionBody>
                 </Accordion>
                 <hr className="border-1 border-slate-300" />
@@ -96,7 +110,14 @@ const Working = () => {
                     meeting summaries and action items for all your meetings. */}
                   </AccordionBody>
                   <AccordionBody className="md:hidden">
-                    <Image src="/img_benefit_bg_voice.png" alt="" />
+                    <Image
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: "100%", height: "auto" }}
+                      src="/img_benefit_bg_voice.png"
+                      alt=""
+                    />
                   </AccordionBody>
                 </Accordion>
               </>
@@ -104,17 +125,38 @@ const Working = () => {
             <div className="hidden md:block">
               {(open === 1 && (
                 <>
-                  <Image src="/img_benefit_echo.png" alt="" />
+                  <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
+                    src="/img_benefit_echo.png"
+                    alt=""
+                  />
                 </>
               )) ||
                 (open === 2 && (
                   <>
-                    <Image src="/img_benefit_nc.png" alt="" />
+                    <Image
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: "100%", height: "auto" }}
+                      src="/img_benefit_nc.png"
+                      alt=""
+                    />
                   </>
                 )) ||
                 (open === 3 && (
                   <>
-                    <Image src="/img_benefit_bg_voice.png" alt="" />
+                    <Image
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: "100%", height: "auto" }}
+                      src="/img_benefit_bg_voice.png"
+                      alt=""
+                    />
                   </>
                 ))}
             </div>

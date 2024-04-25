@@ -9,7 +9,7 @@ const Reviews = () => {
       <div className="mx-auto py-20 md:px-12 max-w-screen-lx">
         <div className="p-6">
           <h1 className="reviews-heading text-center mb-8">
-            Trusted by the world's best professionals
+            {/* Trusted by the world's best professionals */}
           </h1>
           <div className="reviews_scores mx-auto mt-32 flex items-center justify-between">
             <div className="ratings">

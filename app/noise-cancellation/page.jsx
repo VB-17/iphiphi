@@ -5,6 +5,7 @@ import Working from "./components/Working";
 import AppDemo from "./components/AppDemo";
 import Last from "./components/Last";
 import SupportedApps from "./components/SupportedApps";
+import Reviews from "./components/Reviews";
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <Benefits />
       <Working />
       <AppDemo />
+      <Reviews />
       <SupportedApps />
       <Last />
     </>

@@ -40,14 +40,6 @@ const Home = () => {
         </div>
 
         <div className="relative h-96 w-11/12 mx-auto mt-16 p-4 md:mt-0 md:max-w-md">
-          {/* <Image
-            src="/banner-image.jpg"
-            fill
-            // objectFit="cover"
-            // objectPosition=""
-            className="rounded-md"
-            alt="banner-image"
-          /> */}
           <div className="grid grid-cols-3 gap-3">
             <div>
               <Image

@@ -232,3 +232,65 @@ h2 {
   line-height: 64px;
   font-weight: 700;
 }
+
+.reviews-heading {
+  font-size: 30px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.reviews-link {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.reviews-subheading {
+  font-size: 30px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.number-of-reviews-text {
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #576069;
+}
+
+.rating-number-text {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.score_number {
+  width: 125px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(https://krisp.ai/wp-content/themes/krisp-v4/css/../imgs/img_circle_chart.svg)
+    no-repeat center center;
+  background-size: auto;
+  background-size: 125px 125px;
+}
+
+.score {
+  width: 160px;
+}
+
+.scores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 480px;
+}
+
+.ratings-text {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #576069;
+}

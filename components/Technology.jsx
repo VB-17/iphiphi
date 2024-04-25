@@ -55,14 +55,14 @@ const Technology = () => {
                   Clear calls from smartwatches
                 </li>
               </ul>
-              {/* <div className="mt-8">
+              <div className="mt-8">
                 <Link
                   href={"/noise-cancellation"}
                   className="learn_more text-blue-500"
                 >
                   Learn more
                 </Link>
-              </div> */}
+              </div>
             </div>
           </div>
           <div className="col-span-2">

@@ -6,7 +6,7 @@ const SupportedApps = () => {
       <div className="max-w-screen-lx mx-auto md:py-20 md:flex md:justify-between md:items-center">
         <div className="md:pt-0 text-center md:text-left">
           <h1 className="supported-app-heading font-bold pb-7">
-            Krisp works <br /> with any app
+            IPHIPI works <br /> with any app
           </h1>
           {/* <p className="font-light mb-2 learn_more_text md:max-w-xl">
             Krisp works with communication apps such as Zoom, Meet, Teams and

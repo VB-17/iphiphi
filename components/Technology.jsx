@@ -33,11 +33,11 @@ const Technology = () => {
   return (
     <div className="md:p-6 py-32 relative" id="technology">
       <div className="mx-auto max-w-screen-lx p-6">
-        <h1 className="text-3xl font-medium pb-8">Technology</h1>
+        <h1 className="text-3xl font-medium pb-8">AI Mic Technology</h1>
         <div className="grid grid-cols-1 gy-10 md:grid-cols-3 my-10 gap-4">
           <div className="">
             <div className="subtitle mb-4 md:mb-8">
-              AI ENC for earbuds and wearables
+              AI ENC for Earbuds and Wearables
             </div>
             <div className="description">
               <div className="text-body">
@@ -69,7 +69,7 @@ const Technology = () => {
             <div className="grid ms-0 md:ms-8 grid-cols-1 md:grid-cols-5">
               <div className="col-start-1 col-end-7 md:col-start-2 md:col-end-6">
                 <div className="text-xl font-bold text-center mb-4 md:mb-8">
-                  Hear the demo:
+                  Hear AI ENC demo:
                 </div>
 
                 {activeAudio === "bike" && <BikePlayer />}

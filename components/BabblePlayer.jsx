@@ -37,11 +37,13 @@ const BabblePlayer = () => {
 
     audio.onloadedmetadata = () => {
       audio.currentTime = currentPlayBackTime;
-      audio.play();
+      if (isPlaying) {
+        audio.play();
+      }
     };
 
     setSwitchOn(!switchOn);
-    setIsPlaying(true);
+    // setIsPlaying(true);
   };
 
   useEffect(() => {

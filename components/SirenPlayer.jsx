@@ -37,11 +37,14 @@ const SirenPlayer = () => {
 
     audio.onloadedmetadata = () => {
       audio.currentTime = currentPlayBackTime;
-      audio.play();
+      // audio.play();
+      if (isPlaying) {
+        audio.play();
+      }
     };
 
     setSwitchOn(!switchOn);
-    setIsPlaying(true);
+    // setIsPlaying(true);
   };
 
   useEffect(() => {

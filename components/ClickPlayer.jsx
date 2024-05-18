@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const ClickPlayer = () => {
   const BikeNoiseInput = "/Click_sound_6_-18_1627_Input.wav";
-  const BikeNoiseOutput = "/Click_sound_6_-18_1627_output.wav";
+  const BikeNoiseOutput = "/Click_sound_6_-18_1627_output(1).wav";
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);

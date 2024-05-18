@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const BabyPlayer = () => {
   const BikeNoiseInput = "/Baby_Sounds__4_-25_1444_Input.wav";
-  const BikeNoiseOutput = "/Baby_Sounds__4_-25_1444_Output.wav";
+  const BikeNoiseOutput = "/Baby_Sounds__4_-25_1444_output(1).wav";
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);

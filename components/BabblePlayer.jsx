@@ -2,8 +2,8 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 const BabblePlayer = () => {
-  const BabbleNoiseInput = "/babble_6_-15_75967_input.wav";
-  const BabbleNoiseOutput = "/babble_6_-15_75967_output.wav";
+  const BabbleNoiseInput = "/babbleInput.wav";
+  const BabbleNoiseOutput = "/babbleOutput.wav";
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);

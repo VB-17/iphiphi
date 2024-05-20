@@ -2,8 +2,8 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 const SirenPlayer = () => {
-  const BikeNoiseInput = "/Siren_6_-15_68799_Input.wav";
-  const BikeNoiseOutput = "/Siren_6_-15_68799_output.wav";
+  const BikeNoiseInput = "/sirenInput.wav";
+  const BikeNoiseOutput = "/sirenOutput.wav";
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);

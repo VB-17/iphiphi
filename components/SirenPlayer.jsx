@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const SirenPlayer = () => {
   const BikeNoiseInput = "/Siren_6_-15_68799_Input.wav";
-  const BikeNoiseOutput = "/Siren_6_-15_68799_output(1).wav";
+  const BikeNoiseOutput = "/Siren_6_-15_68799_output.wav";
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
